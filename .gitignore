@@ -1,0 +1,27 @@
+## Gradle
+.gradle/
+build/
+*/build/
+
+## Local configuration (never commit)
+local.properties
+
+## Android Studio / IDE
+.idea/
+*.iml
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+
+## Nix
+.direnv/
+result
+result-*
+
+## OS
+.DS_Store
+
+## Obsidian (keep shared config, ignore local workspace state)
+docs/.obsidian/workspace*.json
+docs/.obsidian/cache
