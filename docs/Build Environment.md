@@ -16,6 +16,7 @@ Or, with [direnv](https://direnv.net/) installed, just `cd` into the repo — `.
 - Android SDK via `pkgs.androidenv` (`ANDROID_SDK_ROOT` / `ANDROID_HOME` set automatically)
   - platform-tools, build-tools 35.0.0, platforms 34 & 35, cmdline-tools
 - Gradle 8.14.6
+- Android Studio (launch with `android-studio .` from inside the shell — it picks up `ANDROID_SDK_ROOT` automatically, so it won't prompt to re-download the SDK)
 
 ## Building
 

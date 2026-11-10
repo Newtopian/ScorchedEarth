@@ -44,6 +44,7 @@
           pkgs.jdk17
           androidSdk
           pkgs.gradle
+          pkgs.android-studio
         ];
 
         ANDROID_SDK_ROOT = "${androidSdk}/libexec/android-sdk";
@@ -57,6 +58,7 @@
           echo "Scorched Earth Android dev shell"
           echo "  JAVA_HOME=$JAVA_HOME"
           echo "  ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
+          echo "  Run 'android-studio .' to open this project"
         '';
       };
     };
