@@ -41,7 +41,7 @@
     {
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = [
-          pkgs.jdk17
+          pkgs.jdk21
           androidSdk
           pkgs.gradle
           pkgs.android-studio
@@ -49,7 +49,7 @@
 
         ANDROID_SDK_ROOT = "${androidSdk}/libexec/android-sdk";
         ANDROID_HOME = "${androidSdk}/libexec/android-sdk";
-        JAVA_HOME = pkgs.jdk17.home;
+        JAVA_HOME = pkgs.jdk21.home;
 
         GRADLE_OPTS = "-Dorg.gradle.project.android.aapt2FromMavenOverride=${androidSdk}/libexec/android-sdk/build-tools/35.0.0/aapt2";
 
